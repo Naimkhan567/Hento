@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
+    <title>HENTO</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container-head">
+            <nav id="nav" class="navbar fixed-top navbar-expand-xl navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">HE<span>NTO</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="30px" height="30px" version="1.1" id="Capa_1" x="0px" y="0px"
+                                viewBox="0 0 384.97 384.97" style="enable-background:new 0 0 384.97 384.97;"
+                                xml:space="preserve">
+                                <g>
+                                    <g id="Menu_1_">
+                                        <path
+                                            d="M12.03,120.303h360.909c6.641,0,12.03-5.39,12.03-12.03c0-6.641-5.39-12.03-12.03-12.03H12.03    c-6.641,0-12.03,5.39-12.03,12.03C0,114.913,5.39,120.303,12.03,120.303z" />
+                                        <path
+                                            d="M372.939,180.455H12.03c-6.641,0-12.03,5.39-12.03,12.03s5.39,12.03,12.03,12.03h360.909c6.641,0,12.03-5.39,12.03-12.03    S379.58,180.455,372.939,180.455z" />
+                                        <path
+                                            d="M372.939,264.667H132.333c-6.641,0-12.03,5.39-12.03,12.03c0,6.641,5.39,12.03,12.03,12.03h240.606    c6.641,0,12.03-5.39,12.03-12.03C384.97,270.056,379.58,264.667,372.939,264.667z" />
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Hentotoken</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Ecosystem</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Tokenomics</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Roadmap</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Presence</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Community</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="head-showcase">
+                <div class="text-contain">
+                    <div class="date" data-aos="fade-left">
+                        <div class="day">
+                            <h1 id="days"></h1>
+                            <p>Days</p>
+                        </div>
+
+                        <div class="hour">
+                            <h1 id="hours"></h1>
+                            <p>Hours</p>
+                        </div>
+
+                        <div class="min">
+                            <h1 id="mins"></h1>
+                            <p>Min</p>
+                        </div>
+
+                        <div class="sec">
+                            <h1 id="seconds"></h1>
+                            <p>Sec</p>
+                        </div>
+                    </div>
+                    <div class="text" data-aos="fade-up">
+                        <h1>the strongest anti crypto- <br>
+                            whale ecosystem</h1>
+                        <p>A deflationary & rewarding Defi token powering an entire upcoming <br> ecosystem</p>
+                    </div>
+                    <div class="showcase-btn" data-aos="fade-down">
+                        <a href="https://t.me/hentotokenofficial">join telegram</a>
+                        <a href="https://twitter.com/HentoToken?s=09">join twitter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="hento-token">
+        <div class="container-token">
+            <div class="row">
+                <div class="col-md-6 left">
+                    <div class="text">
+                        <h1 data-aos="fade-left">He<span>nto</span></h1>
+                        <h2 data-aos="fade-right">token</h2>
+                    </div>
+                </div>
+                <div class="col-md-6 right">
+                    <div class="token-text" data-aos="fade-right">
+                        <div>
+                            <div class="head d-flex justify-content-between">
+                                <h3>
+                                    Community Driven
+                                </h3>
+                                <p>v</p>
+                            </div>
+                            <div class="body">
+                                HENTO token's ownership will be renourced at the time of launch
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="head d-flex justify-content-between">
+                                <h3>
+                                    Automated LP
+                                </h3>
+                                <p>v</p>
+                            </div>
+                            <div class="body">
+                                Liquidity is automatically generated with each trade, creating an ever increasing pice
+                                floor of HENTO token.
+                            </div>
+                        </div>
+                        <div>
+                            <div class="head d-flex justify-content-between">
+                                <h3>
+                                    Practical Utility/Use Case
+                                </h3>
+                                <p>v</p>
+                            </div>
+                            <div class="body">
+                                One fully deployed, HENTO (HENTO) will be the default token integrated to the HENTO
+                                ecosystem
+                            </div>
+                        </div>
+                        <div>
+                            <div class="head d-flex justify-content-between">
+                                <h3>
+                                    Community Driven
+                                </h3>
+                                <p>v</p>
+                            </div>
+                            <div class="body">
+                                HENTO token's ownership will be renourced at the time of launch
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="head d-flex justify-content-between">
+                                <h3>
+                                    Automated LP
+                                </h3>
+                                <p>v</p>
+                            </div>
+                            <div class="body">
+                                Liquidity is automatically generated with each trade, creating an ever increasing pice
+                                floor of HENTO token.
+                            </div>
+                        </div>
+                        <div>
+                            <div class="head d-flex justify-content-between">
+                                <h3>
+                                    Practical Utility/Use Case
+                                </h3>
+                                <p>v</p>
+                            </div>
+                            <div class="body">
+                                One fully deployed, HENTO (HENTO) will be the default token integrated to the HENTO
+                                ecosystem
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="eco-system">
+        <div class="container-eco">
+            <div class="top-text" data-aos="fade-left">
+                <h1>HENTO Ecosystem</h1>
+                <p>An integrated, one stop solution for cryptocurrency payments, P2P trading & a secure wallet with
+                    military <br> grade encryption. Accessible via web & apps. Starts taking shape Q1 2022</p>
+            </div>
+            <div class="body">
+                <div class="row">
+                    <div class="col-md-4" data-aos="fade-left">
+                        <img src="./assets/img/Group 11.png" alt="">
+                        <p>Hento Wallet</p>
+                    </div>
+                    <div class="col-md-4 middle" data-aos="fade-down">
+                        <img src="./assets/img/Group 17.png" alt="">
+                        <p>Hento P2P trading</p>
+                    </div>
+                    <div class="col-md-4 right" data-aos="fade-right">
+                        <img src="./assets/img/Group 20.png" alt="">
+                        <p>Hento Swap</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="nomics">
+        <div class="container-nomics">
+            <div class="top-text" data-aos="fade-top">
+                <h1>TOKE<span>nomics</span></h1>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="chart" data-aos="fade-left"></div>
+                </div>
+                <div class="col-md-6 my-auto right">
+                    <div class="item" data-aos="fade-right">
+                        <ul>
+                            <li>
+                                <div class="circle-1"></div>
+                                <h3>5% seed & marketing</h3>
+                            </li>
+                            <li>
+                                <div class="circle-2"></div>
+                                <h3>10% team</h3>
+                            </li>
+                            <li>
+                                <div class="circle-3"></div>
+                                <h3> 35% community</h3>
+                            </li>
+                            <li>
+                                <div class="circle-4"></div>
+                                <h3>50% burned</h3>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="total-section">
+        <div class="container-total">
+            <div class="total">
+                <div class="head d-flex">
+                    <div class="left">
+                        <div class="bar-1"></div>
+                        <div class="bar-2"></div>
+                        <div class="bar-3"></div>
+                    </div>
+                    <div class="right" data-aos="fade-left">
+                        <h4>Total Supply</h4>
+                    </div>
+                </div>
+                <div class="foot d-flex">
+                    <div class="left">
+                        <div class="bar-1"></div>
+                        <div class="bar-2"></div>
+                    </div>
+
+                    <div class="right" data-aos="fade-left">
+                        <p>1,000,000,000,000,000</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="total">
+                <div class="head d-flex">
+                    <div class="left">
+                        <div class="bar-1"></div>
+                        <div class="bar-2"></div>
+                        <div class="bar-3"></div>
+                    </div>
+                    <div class="right" data-aos="fade-left">
+                        <h4>Initial burn</h4>
+                    </div>
+                </div>
+                <div class="foot d-flex">
+                    <div class="left">
+                        <div class="bar-1"></div>
+                        <div class="bar-2"></div>
+                    </div>
+
+                    <div class="right" data-aos="fade-left">
+                        <p>500,000,000,000,000,000</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="number">
+                <div class="head d-flex">
+                    <div class="left">
+                        <div class="bar-1"></div>
+                        <div class="bar-2"></div>
+                        <div class="bar-3"></div>
+                    </div>
+                    <div class="right" data-aos="fade-left">
+                        <h4>Number of tokens (Pre sale)</h4>
+                    </div>
+                </div>
+                <div class="foot d-flex">
+                    <div class="left">
+                        <div class="bar-1"></div>
+                        <div class="bar-2"></div>
+                    </div>
+
+                    <div class="right" data-aos="fade-left">
+                        <p>25,000,000,000,000,000</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="accept">
+                <div class="head d-flex">
+                    <div class="left">
+                        <div class="bar-1"></div>
+                        <div class="bar-2"></div>
+                        <div class="bar-3"></div>
+                    </div>
+                    <div class="right" data-aos="fade-left">
+                        <h4>Acceptable</h4>
+                    </div>
+                </div>
+                <div class="foot d-flex">
+                    <div class="left">
+                        <div class="bar-1"></div>
+                        <div class="bar-2"></div>
+                    </div>
+
+                    <div class="right" data-aos="fade-left">
+                        <p>BNB</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="price">
+                <div class="head d-flex">
+                    <div class="left">
+                        <div class="bar-1"></div>
+                        <div class="bar-2"></div>
+                        <div class="bar-3"></div>
+                    </div>
+                    <div class="right" data-aos="fade-left">
+                        <h4>The price increases with each leg of token sale. Simply send BNB and automatically recieve
+                            HNTO tokens in your wallet. As we are in the initital stage, more details regarding the sale
+                            would be updated soon.</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="join">
+                <div class="head d-flex">
+                    <div class="left">
+                        <div class="bar-1"></div>
+                        <div class="bar-2"></div>
+                        <div class="bar-3"></div>
+                    </div>
+                    <div class="right" data-aos="fade-left">
+                        <h4>Join us stay updated & win community rewards!</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="road-map">
+        <div class="container-map">
+            <div class="head-text" data-aos="fade-down">
+                <h1>Road<span>map</span></h1>
+            </div>
+            <div class="qu">
+                <div class="head d-flex">
+                    <div class="left">
+                        <div class="bar-1"></div>
+                        <div class="bar-2"></div>
+                        <div class="bar-3"></div>
+                    </div>
+                    <div class="right" data-aos="fade-left">
+                        <h4 id="btn">Q3 2021:</h4>
+                        <p>Launch, burn and pre sale Redevelop complete website Infographic white paper in multiple
+                            languages listing on CMC, CG and similar platforms Initiate marketing & tie ups Community
+                            build up Cross platform social media marketing $4.25 million (est) marketcap</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="qu">
+                <div class="head d-flex">
+                    <div class="left">
+                        <div class="bar-1"></div>
+                        <div class="bar-2"></div>
+                        <div class="bar-3"></div>
+                    </div>
+                    <div class="right" data-aos="fade-left">
+                        <h4 id="btn">Q4 2021:</h4>
+                        <p>Commence HENTO ecosystem development Hard marketing push Worldwide influencer tie
+                            ups/partnerships on social media Listing on multiple exchanges Community engagement &
+                            rewards $11.5 million (est) marketcap</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="qu">
+                <div class="head d-flex">
+                    <div class="left">
+                        <div class="bar-1"></div>
+                        <div class="bar-2"></div>
+                        <div class="bar-3"></div>
+                    </div>
+                    <div class="right" data-aos="fade-left">
+                        <h4 id="btn">2022:</h4>
+                        <p>Commence apps development Integrate the entire HENTO ecosystem Unleash the full marketing
+                            strategies across multiple channels Community votes, awards & further engagement</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="presence">
+        <div class="container-presence">
+            <div class="top-text" data-aos="fade-top">
+                <h1>Pre<span>sence</span></h1>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-md-6">
+                    <div class="main-box" data-aos="fade-left">
+                        <div class="box">
+                            <div class="head d-flex justify-content-between">
+                                <h3>Listing Partners:</h3>
+                                <p id="pre">V</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="main-box" data-aos="fade-right">
+                        <div class="box">
+                            <div class="head d-flex justify-content-between">
+                                <h3>Launch Partners:</h3>
+                                <p id="pre">V</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="communi">
+        <div class="container-com">
+            <div class="text">
+                <h1 data-aos="fade-right">Com<span>munity</span></h1>
+                <p data-aos="fade-left">An anti crypto-whale community <br>
+                    We aim to spend a part our marketing budget spreading the word through our community. Community
+                    participation <br>rewards, project updates & early access to major launch events & influencer tie
+                    ups would be availlable at each stage. <br> Join us as we lay the foundation of our community! </p>
+            </div>
+
+            <div class="body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="body-text">
+                            <h4 data-aos="fade-down">Suggestions? Write to us!</h4>
+                            <div class="back" data-aos="fade-top">
+                                <p>contact@hentotoken.com</p>
+                            </div>
+                        </div>
+
+                        <div class="body-text">
+                            <h4 data-aos="fade-top">Business enquiries</h4>
+                            <div class="back" data-aos="fade-down">
+                                <p>business@hentotoken.com</p>
+                            </div>
+
+                        </div>
+
+                        <div class="body-text">
+                            <h4 data-aos="fade-down">We're hiring!</h4>
+                            <div class="back" data-aos="fade-top">
+                                <p>careers@hentotoken.com</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 my-auto right">
+                        <h1 data-aos="fade-down">Disclaimer</h1>
+                        <p data-aos="fade-top">crypto-currency investments are subject to risks. Please do your own <br>
+                            reseach before investing in any cryptocurrency. <br> Based on the number of e-mails, we may
+                            not be able to reply to every e-mail. Also, delayed replies are inevitable.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="footer">
+        <div class="text" data-aos="fade-right">
+            <p>All rights reserved @ hentotoken.com 2021</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
